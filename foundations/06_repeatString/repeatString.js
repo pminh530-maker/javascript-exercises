@@ -7,5 +7,20 @@ const repeatString = function(string, num) {
     return result;
 };
 
+/*
+Another way to complete this exercise using array methods
+
+const repeatString = function(string, num) {
+  if (num < 0) return "ERROR";
+  
+  let parts = [];
+  for (let i = 0; i < num; i++) {
+    parts.push(string);
+  }
+  
+  return parts.join("");
+};
+ */
+
 // Do not edit below this line
 module.exports = repeatString;
