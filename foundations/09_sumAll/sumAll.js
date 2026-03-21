@@ -20,6 +20,10 @@ We can also use this to create a condition to sort the placeholder values before
     min = max;
     max = temp;
   }
+
+A solution for big numbers
+let numberOfTerms = (max - min) + 1;
+let sum = ((min + max) * numberOfTerms) / 2;
 */
 
 
