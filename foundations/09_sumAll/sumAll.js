@@ -2,10 +2,7 @@ const sumAll = function(min, max) {
     if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
     if (min < 0 || max < 0) return "ERROR";
 
-    const sorted = [min, max].sort((min, max) => min - max);
-    min = sorted[0]; // The smaller number
-    max = sorted[1]; // The larger number
-  // also [min,max] = [sorted[0], sorted[01]];
+    if (min > max) [min, max] = [max, min];
 
     let sum = 0;
     for (let i = min; i <= max; i++) {
