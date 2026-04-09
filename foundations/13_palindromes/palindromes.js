@@ -11,7 +11,7 @@ const palindromes = function (string) {
 
   // Create a new reversed string for comparison
   const reversedString = cleanedString.split('').reverse().join('');
-  // Note: reverse() only works on arrays
+  // Note: reverse() only works on arrays.
 
   // Return the outcome of the comparison which will either be true or false
   return cleanedString === reversedString;
