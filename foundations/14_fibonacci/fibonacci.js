@@ -1,6 +1,23 @@
-const fibonacci = function() {
+const fibonacci = function(countArg) {
+    // checks argument's type and makes sure we use 
+    // a number throughout rest of function.
+    let count
+    if (typeof countArg !== 'number') {
+        count = parseInt(countArg)
+    } else {
+        count = countArg
+    }
 
+    if (count < 0) return "OOPS";
+    if (count == 0) return 0;
+
+    const fib = [0, 1];
+    for (let i = 2; i <= count; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+    }    
+    return fib[count];
 };
 
-// Do not edit below this line
+// Another way to do it is by using an iterative approach with an array containing two values, 0 and 1
+
 module.exports = fibonacci;
