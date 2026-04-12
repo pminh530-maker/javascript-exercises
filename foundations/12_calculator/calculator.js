@@ -19,9 +19,11 @@ const power = function(base, exponent) {
 };
 
 const factorial = function(number) {
+  let product = 1;
 	for(let i = number; i > 0; i--) {
-    number * i;
+    product *= i;
   }
+  return product;
 };
 
 // Do not edit below this line
