@@ -1,5 +1,5 @@
-/* const fahreinheit = `${(celcius * 9/5 + 32)} °C`;
-const celsius = `${(fahreinheit - 32) * 5/9} °F`; */
+/* const fahreinheit = (celcius * 9/5 + 32);
+const celsius = (fahreinheit - 32) * 5/9; */
 
 const convertToCelsius = function(fahrenheit) {
   return Math.round((fahrenheit - 32) * (5/9) * 10) / 10;
